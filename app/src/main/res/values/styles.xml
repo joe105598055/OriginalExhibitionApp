@@ -1,0 +1,18 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/blue_A100</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- process block -->
+    <declare-styleable name="processBlock">
+        <attr name="processTx" format="reference|string" />
+        <attr name="btnTx" format="reference|string" />
+        <attr name="hideProcessLine" format="boolean" />
+        <attr name="processIndex" format="integer" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name" translatable="false">OriginalExhibitionApp</string>
+
+    <string name="cancel_tx" translatable="false">Cancel</string>
+
+    <string name="distance_lable" translatable="false">Distance :</string>
+    <string name="times_lable" translatable="false">Times :</string>
+    <string name="scan" translatable="false">Scan</string>
+    <string name="scan_again" translatable="false">Clean up</string>
+    <string name="store_result" translatable="false">Store Result</string>
+    <string name="distance" translatable="false">Distance</string>
+    <string name="txPower_1m" translatable="false">1M</string>
+    <string name="txPower_10m" translatable="false">10M</string>
+    <string name="txPower_20m" translatable="false">20M</string>
+    <string name="txPower_50m" translatable="false">50M</string>
+    <string name="exit" translatable="false">Exit Exhibition</string>
+    <string name="stop_scan" translatable="false">Stop Scan</string>
+    <string name="entry" translatable="false">Entry Exhibition (Original)</string>
+    <string name="txpower" translatable="false">txPower</string>
+    <string name="beacon" translatable="false">Beacon</string>
+    <string name="file" translatable="false">File</string>
+    <string name="txpower_lable" translatable="false">TxPower :</string>
+
+</resources>
