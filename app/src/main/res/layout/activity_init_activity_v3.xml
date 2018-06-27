@@ -11,25 +11,38 @@
     android:id="@+id/root"
     tools:context="tech.onetime.originalExhibition.activity.initActivityV3">
 
-    <ImageView
+    <!--<ImageView-->
+        <!--android:id="@+id/initLogo"-->
+        <!--android:gravity="center_horizontal"-->
+        <!--android:src="@mipmap/ic_launcher"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:minHeight="300dp"-->
+        <!--android:minWidth="300dp"-->
+        <!--android:layout_marginTop="17dp"-->
+        <!--android:layout_alignParentTop="true"-->
+        <!--android:layout_centerHorizontal="true" />-->
+    <TextView
         android:id="@+id/initLogo"
         android:gravity="center_horizontal"
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="wrap_content"
+        android:text="Positioning Algo."
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:minHeight="300dp"
-        android:minWidth="300dp"
-        android:layout_marginTop="17dp"
-        android:layout_alignParentTop="true"
+        android:minHeight="250dp"
+        android:minWidth="250dp"
+        android:textSize="60sp"
+        android:layout_marginBottom="119dp"
+        android:layout_above="@+id/entry"
         android:layout_centerHorizontal="true" />
     <Button
         android:text="@string/entry"
         android:layout_width="271dp"
         android:layout_height="wrap_content"
         android:id="@+id/entry"
-        android:layout_marginTop="28dp"
-        android:layout_below="@+id/initLogo"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/entry_exhibition_button"
+        android:layout_marginBottom="51dp" />
 
 
 </RelativeLayout>

@@ -35,7 +35,7 @@ public class PositionAlgorithm {
         }
         BeaconObject base = beacons.get(0);
 
-        return transPosition(base.getMajorMinorString());
+        return transPosition(base.getMajor());
     }
 
     /**
@@ -57,22 +57,16 @@ public class PositionAlgorithm {
             }
         });
     }
-    private String transPosition (String MajorMinor){
+    private String transPosition (String Majority){
         String position;
-        switch (MajorMinor){
-            case "(0,0)":
-            case "(0,5)":
-            case "(0,8)":
+        switch (Majority){
+            case "0":
                 position = "A";
                 break;
-            case "(5,0)":
-            case "(5,5)":
-            case "(5,8)":
+            case "5":
                 position = "B";
                 break;
-            case "(8,0)":
-            case "(8,5)":
-            case "(8,8)":
+            case "8":
                 position = "C";
                 break;
             default:

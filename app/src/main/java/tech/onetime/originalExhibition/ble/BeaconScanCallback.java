@@ -239,7 +239,7 @@ public class BeaconScanCallback implements KitkatScanCallback.iKitkatScanCallbac
             return false;
         }
 
-        if (currentScannedTime - lastScannedTime > 100) { // updateTime
+        if (currentScannedTime - lastScannedTime > 1000) { // updateTime
             lastScannedTime = currentScannedTime;
             return true;
         } else {

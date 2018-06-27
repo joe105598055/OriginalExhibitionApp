@@ -20,21 +20,20 @@ android:orientation="vertical" android:layout_width="match_parent"
     <ImageView
         android:id="@+id/areaImage"
         android:gravity="center_horizontal"
-        android:src="@mipmap/ic_launcher"
-        android:layout_width="wrap_content"
+        android:src="@mipmap/exhibition_icon"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:minHeight="300dp"
-        android:minWidth="300dp"
-        android:layout_marginBottom="91dp"
-        android:layout_above="@+id/exit"
-        android:layout_centerHorizontal="true" />
+        android:minHeight="250dp"
+        android:minWidth="250dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="59dp" />
 
     <Button
         android:id="@+id/exit"
         android:layout_width="315dp"
         android:layout_height="wrap_content"
         android:layout_weight="0.03"
-        android:background="@drawable/rounded_rec_primary_color"
+        android:background="@drawable/exit_exhibition_button"
         android:text="@string/exit"
         android:layout_marginBottom="36dp"
         android:layout_alignParentBottom="true"

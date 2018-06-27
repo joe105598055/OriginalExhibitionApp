@@ -150,16 +150,13 @@ public class ExhibitionActivity extends AppCompatActivity implements BeaconScanC
 
 
     @Override
-    public void getCurrentPosition(String position, ArrayList<BeaconObject> beaconArray,BeaconObject beaconObject) {
+    public void getCurrentPosition(String position, ArrayList<BeaconObject> beaconArray,BeaconObject beaconObject) { // 位置 // 所有beacon // 最近beacon
         long currentUpdateTime = System.currentTimeMillis();
-//
-//        Log.d(TAG, "[currentUpdateTime]" + currentUpdateTime);
-//        Log.d(TAG, "[lastUpdateTime   ]" + lastUpdateTime);
-        Log.d(TAG, "[delta]" + (currentUpdateTime - lastUpdateTime));
+//        if (currentUpdateTime - lastUpdateTime < 800)
+//            return;
 
-        if (currentUpdateTime - lastUpdateTime < 2000){
-            return;
-        }
+//        Log.d(TAG, "[delta]" + (currentUpdateTime - lastUpdateTime));
+
 
         lastUpdateTime = currentUpdateTime;
         Log.d(TAG, "************************getCurrentPosition: " + position);
@@ -184,12 +181,12 @@ public class ExhibitionActivity extends AppCompatActivity implements BeaconScanC
                 case "C":
                     new DownloadImageTask((ImageView) findViewById(R.id.areaImage)).execute("http://140.124.181.85:3000/image/C.png");
                     break;
-                case "critical":
-                    new DownloadImageTask((ImageView) findViewById(R.id.areaImage)).execute("http://140.124.181.85:3000/image/Critical.png");
-                    break;
-                case "not majority":
-                    new DownloadImageTask((ImageView) findViewById(R.id.areaImage)).execute("http://140.124.181.85:3000/image/Moving.png");
-                    break;
+//                case "critical":
+//                    new DownloadImageTask((ImageView) findViewById(R.id.areaImage)).execute("http://140.124.181.85:3000/image/Critical.png");
+//                    break;
+//                case "not majority":
+//                    new DownloadImageTask((ImageView) findViewById(R.id.areaImage)).execute("http://140.124.181.85:3000/image/Moving.png");
+//                    break;
             }
         }
     }
@@ -206,7 +203,7 @@ public class ExhibitionActivity extends AppCompatActivity implements BeaconScanC
     void exit(){
         setResult(RESULT_OK, ExhibitionActivity.this.getIntent());
         Log.d(TAG, "Store result");
-        doSaveResult();
+//        doSaveResult();
         ExhibitionActivity.this.finish();
     }
 
